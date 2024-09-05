@@ -1,5 +1,4 @@
 // Task 1: Calculate the Tip
-
 let bill = 133;
 // Output = 133;
 let tip = (bill <=300 && bill >= 50) ? (bill * 0.15) : (bill * 0.20);
@@ -10,3 +9,10 @@ console.log(tip);
 sumTotal = bill + tip
 console.log(`The bill is $${bill}, the tips is $${tip}, and the total is $${sumTotal}.`); 
 //Output = 152.95
+
+// Task 3: Create a Function
+function calculateTip(bill) {
+    return (bill <=300 && bill >= 50) ? (bill * 0.15) : (bill * 0.20)}
+let testerBill = 100;
+let testerTip = calculateTip(testerBill);
+console.log(`The total bill is $${testerBill} and the tip is $${testerTip}` )
