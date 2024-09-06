@@ -16,3 +16,18 @@ function calculateTip(bill) {
 let testerBill = 100;
 let testerTip = calculateTip(testerBill);
 console.log(`The total bill is $${testerBill} and the tip is $${testerTip}` )
+
+// Task 4&5: Utilize Arrays and Data Set
+// Function created to calculate tip
+function calculateTip(bill) {
+    return bill * 0.2;}
+
+const bills = [275, 40, 430,];  
+// const bills = [125, 555, 44];  // Test Data Set 2
+const tips = bills.map(bill => calculateTip(bill));
+const totals = bills.map((bill, index) => bill + tips[index]);
+console.log("Bills:", bills);
+console.log("Tips:", tips);
+console.log("Totals:", totals);
+const testBill = 100;
+console.log("Tip for $100 bill:", calculateTip(testBill));
